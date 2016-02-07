@@ -12,12 +12,20 @@
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
 
+@property (weak, nonatomic) IBOutlet UIButton *buttonSave;
+
+// - (IBAction)buttonAction:(id)sender;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
+    
+    [self.buttonSave addTarget:self action:@selector(save) forControlEvents:UIControlEventTouchUpInside];
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -26,4 +34,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) save {
+
+    NSLog(@"save");
+
+}
+
+
+//- (IBAction)buttonAction:(id)sender {
+
+ //   NSLog(@"Button Action");
+
+
+//}
 @end
