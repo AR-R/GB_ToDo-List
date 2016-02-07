@@ -29,7 +29,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="uSt-Yk-Lvt">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="aTN-ko-2pO"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="aTN-ko-2pO">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="push" id="9hR-T5-27k"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="33v-7I-fkp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -61,10 +65,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="pjn-8D-Cm7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130.66666666666666" y="308.13999999999999"/>
+            <point key="canvasLocation" x="-4314" y="266"/>
         </scene>
     </scenes>
 </document>
