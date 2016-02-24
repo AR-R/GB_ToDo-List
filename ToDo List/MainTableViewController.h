@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 
-@interface MainTableViewController : UITableViewController
+@interface MainTableViewController : UITableViewController 
 
-@property (nonatomic, strong) NSMutableArray * arrayEvents;
+
 
 @end

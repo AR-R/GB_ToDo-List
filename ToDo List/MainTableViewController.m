@@ -10,6 +10,8 @@
 
 @interface MainTableViewController ()
 
+@property (nonatomic, strong) NSMutableArray * arrayEvents;
+
 @end
 
 @implementation MainTableViewController
@@ -24,10 +26,10 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 //}
 
-//- (void)didReceiveMemoryWarning {
- //  [super didReceiveMemoryWarning];
+- (void)didReceiveMemoryWarning {
+[super didReceiveMemoryWarning];
 // Dispose of any resources that can be recreated.
-//}
+}
 
 #pragma mark - Table view data source
 
