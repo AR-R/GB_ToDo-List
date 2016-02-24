@@ -62,7 +62,7 @@
     
     // Configure the cell...
     
-    NSString * string = [self.arrayEvents objectAtIndex:indexPath.row];
+    NSString * string = [self.arrayEvents  objectAtIndex:indexPath.row];
     
     cell.textLabel.text = string;
     
