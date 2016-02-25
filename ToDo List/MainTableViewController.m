@@ -2,7 +2,7 @@
 //  MainTableViewController.m
 //  ToDo List
 //
-//  Created by Андрей Ремизов on 24.02.16.
+//  Created by Андрей Ремизов on 25.02.16.
 //  Copyright © 2016 GB. All rights reserved.
 //
 
@@ -16,59 +16,50 @@
 
 @implementation MainTableViewController
 
-//- (void)viewDidLoad {
-//    [super viewDidLoad];
+- (void)viewDidLoad {
+    [super viewDidLoad];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-//}
+}
+
+// Such method has appeared when some windows must reveal on the screen of the device
+
+- (void)viewWillAppear:(BOOL)animated {
+
+    self.arrayEvents = [[NSMutableArray alloc] initWithObjects:@"AAAA ", @"BBBB ", @"CCCC", nil];
+
+}
 
 - (void)didReceiveMemoryWarning {
-[super didReceiveMemoryWarning];
-// Dispose of any resources that can be recreated.
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+#warning Incomplete implementation, return the number of sections
     return 0;
 }
 
-
-- (void) viewWillAppear:(BOOL)animated {
-    
-    self.arrayEvents = [[NSMutableArray alloc]initWithObjects:@"AAA", @"BBB", @"CCC", nil];
-    
-}
-
-
-//#pragma mark - Table view data source
-
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
-    return self.arrayEvents.count;
+#warning Incomplete implementation, return the number of rows
+    return 0;
 }
 
-
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    NSString * identifier = @"Cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
     // Configure the cell...
     
-    NSString * string = [self.arrayEvents  objectAtIndex:indexPath.row];
-    
-    cell.textLabel.text = string;
-    
     return cell;
 }
-
+*/
 
 /*
 // Override to support conditional editing of the table view.
