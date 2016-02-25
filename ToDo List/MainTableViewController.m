@@ -41,25 +41,34 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
+
+// Amount of cells reflecting the table presence has equal number of elements at some array
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return self.arrayEvents.count;
 }
 
-/*
+
+ // Configure the every cell...
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    // Configure the cell...
+    NSString * identifier = @"Cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+    
+    // NSString is equal to our array's every elements that has happened without mistakes
+    
+    NSString * string = [self.arrayEvents objectAtIndex:indexPath.row];
+    
+    // Some text's cell would be equal to some string
+    
+    cell.textLabel.text = string;
+   
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
