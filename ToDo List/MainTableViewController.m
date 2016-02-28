@@ -26,11 +26,19 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-// Such method has appeared when some windows must reveal on the screen of the device
+// Such method has appeared when some windows must only reveal on the screen of the device
 
 - (void)viewWillAppear:(BOOL)animated {
 
-    self.arrayEvents = [[NSMutableArray alloc] initWithObjects:@"AAAA ", @"BBBB ", @"CCCC", nil];
+  //  self.arrayEvents = [[NSMutableArray alloc] initWithObjects:@"AAAA ", @"BBBB ", @"CCCC", nil];
+    
+    // Study how has created some events which became be notifications at table view some Iphone
+    
+    // Have created such event converted to be presented in table list of notifications
+    
+    NSArray * array = [[UIApplication sharedApplication] scheduledLocalNotifications];
+    
+    self.arrayEvents = [[NSMutableArray alloc] initWithArray:array];
 
 }
 
