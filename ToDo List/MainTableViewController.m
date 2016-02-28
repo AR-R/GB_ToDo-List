@@ -69,11 +69,15 @@
     
     // NSString is equal to our array's every elements that has happened without mistakes
     
+    // NSString * string = [self.arrayEvents objectAtIndex:indexPath.row];
+    
     UILocalNotification * notification = [self.arrayEvents objectAtIndex:indexPath.row];
     
     // Some text's cell would be equal to some string
     
     NSDictionary * dict = notification.userInfo;
+    
+    // self.textLabel.text = string;
     
     cell.textLabel.text = [dict objectForKey:@"eventInfo"];
     
@@ -86,6 +90,7 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 
 /*
 // Override to support conditional editing of the table view.
