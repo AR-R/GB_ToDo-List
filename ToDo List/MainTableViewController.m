@@ -106,7 +106,13 @@
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+    // Created instance of Class
+    
     DetailViewController * detailView = [self.storyboard instantiateViewControllerWithIdentifier:@"detailView"];
+    
+    // After touch of cell existed a removal to another window
+    
+    [self.navigationController pushViewController:detailView animated:YES];
     
 }
 
