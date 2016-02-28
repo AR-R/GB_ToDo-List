@@ -59,6 +59,8 @@
 
  // Configure the every cell...
 
+// Below some method which implementing the table Cells
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     NSString * identifier = @"Cell";
@@ -67,11 +69,18 @@
     
     // NSString is equal to our array's every elements that has happened without mistakes
     
-    NSString * string = [self.arrayEvents objectAtIndex:indexPath.row];
+    UILocalNotification * notification = [self.arrayEvents objectAtIndex:indexPath.row];
     
     // Some text's cell would be equal to some string
     
-    cell.textLabel.text = string;
+    NSDictionary * dict = notification.userInfo;
+    
+    cell.textLabel.text = [dict objectForKey:@"eventInfo"];
+    
+    cell.detailTextLabel.text = [dict objectForKey:@"eventDate"];
+    
+    
+    
    
     
     return cell;
