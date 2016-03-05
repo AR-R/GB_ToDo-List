@@ -110,7 +110,7 @@
     
     DetailViewController * detailView = [self.storyboard instantiateViewControllerWithIdentifier:@"detailView"];
     
-    // After touch of cell existed a removal to another window
+    // After touch of cell and it's release existed an animated removal to another window
     
     [self.navigationController pushViewController:detailView animated:YES];
     
