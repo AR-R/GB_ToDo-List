@@ -120,6 +120,10 @@
     
     detailView.eventInfo = [dict objectForKey:@"eventInfo"];
     
+    detailView.eventDate = notification.fireDate;
+    
+    detailView.isDetail = YES;
+    
     // After touch of cell and it's release existed an animated removal to another window
     
     [self.navigationController pushViewController:detailView animated:YES];
