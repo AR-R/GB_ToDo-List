@@ -25,6 +25,7 @@
     [super viewDidLoad];
     
     // Put a defence for user to be avoiding wrong actions as result of uncorrect process of programm
+    
     if (self.isDetail) {
         
         self.textField.text = self.eventInfo;

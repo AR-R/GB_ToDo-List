@@ -106,9 +106,19 @@
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+    UILocalNotification * notification = [self.arrayEvents objectAtIndex:indexPath.row];
+    
+    // Some text's cell would be equal to some string
+    
+    NSDictionary * dict = notification.userInfo;
+    
     // Created instance of Class
     
-    DetailViewController * detailView = [self.storyboard instantiateViewControllerWithIdentifier:@"detailView"];
+    DetailViewController * detailView = [self.storyboard
+                                         
+    instantiateViewControllerWithIdentifier:@"detailView"];
+    
+    detailView.eventInfo = [dict objectForKey:@"eventInfo"];
     
     // After touch of cell and it's release existed an animated removal to another window
     
