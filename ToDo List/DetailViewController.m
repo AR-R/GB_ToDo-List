@@ -68,6 +68,14 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+// Improve visual view using properties of IDE
+
+- (void) setDatePickerValueWithAnimation {
+
+    [self.datePicker setDate: self.eventDate animated:YES];
+
+}
+
 - (void)didReceiveMemoryWarning {
     
     [super didReceiveMemoryWarning];
