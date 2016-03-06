@@ -40,6 +40,10 @@
     NSArray * array = [[UIApplication sharedApplication] scheduledLocalNotifications];
     
     self.arrayEvents = [[NSMutableArray alloc] initWithArray:array];
+    
+    // Improved animation's possibility at MainTableViewController
+    
+    [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade ];
 
 }
 
