@@ -38,7 +38,11 @@
         
         self.buttonSave.alpha = 0;
         
-        self.datePicker.date = self.eventDate;
+       // self.datePicker.date = self.eventDate;
+        
+       // Called the method to get date be animated
+        
+        [self performSelector:@selector(setDatePickerValueWithAnimation) withObject:nil afterDelay:0.5];
     }
     
     
@@ -60,8 +64,7 @@
      
      UIControlEventTouchUpInside];
     
-    UITapGestureRecognizer * handleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:
-    @selector (handleEndEditing)];
+    UITapGestureRecognizer * handleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action: @selector (handleEndEditing)];
     
     [self.view addGestureRecognizer:handleTap];
    
