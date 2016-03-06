@@ -223,7 +223,9 @@
     
     // NSLog(@"save");
 
-
+    // Add method to return to the previous window creating some new event
+    
+    [self.navigationController popViewControllerAnimated:YES];
 
 }
 
