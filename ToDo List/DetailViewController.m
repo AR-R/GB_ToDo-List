@@ -30,6 +30,14 @@
         
         self.textField.text = self.eventInfo;
         
+    // Fulfill actions to turn a possibility of some new date or new event on under detail's view
+        
+        self.textField.userInteractionEnabled = NO;
+        
+        self.datePicker.userInteractionEnabled = NO;
+        
+        self.buttonSave.alpha = 0;
+        
         self.datePicker.date = self.eventDate;
     }
     
