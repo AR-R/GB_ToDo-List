@@ -223,7 +223,10 @@
     
     // NSLog(@"save");
 
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"newEvent" object:nil];
+    // When newEvent has saved,the notification has appeared and it'll removed
+    // for object to be subscribe
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"NewEvent" object:nil];
     // Add method to return to the previous window creating some new event
     
     [self.navigationController popViewControllerAnimated:YES];

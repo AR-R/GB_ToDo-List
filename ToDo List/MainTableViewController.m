@@ -36,7 +36,7 @@
     
  // The object to be subscribed for the notification must catch it (after newEvent's creature)
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadTableViewWhenNewEvent) name:@"newEvent" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadTableViewWhenNewEvent) name:@"NewEvent" object:nil];
 
 }
 
