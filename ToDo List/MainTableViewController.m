@@ -26,7 +26,17 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 
+    // Study how has created some events which became be notifications at table view some Iphone
     
+    // Have created such event converted to be presented in table list of notifications
+    
+    NSArray * array = [[UIApplication sharedApplication] scheduledLocalNotifications];
+    
+    self.arrayEvents = [[NSMutableArray alloc] initWithArray:array];
+    
+ // The object to be subscribed for the notification must catch it (after newEvent's creature)
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadTableViewWhenNewEvent) name:@"newEvent" object:nil];
 
 }
 
