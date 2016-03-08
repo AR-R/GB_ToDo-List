@@ -25,13 +25,23 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
+    
+
 }
 
 // Such method has appeared when some windows must only reveal on the screen of the device
 
-- (void)viewWillAppear:(BOOL)animated {
 
-  //  self.arrayEvents = [[NSMutableArray alloc] initWithObjects:@"AAAA ", @"BBBB ", @"CCCC", nil];
+// Reload TableViewController when add the notification at mobile app
+// (some new event has occured), creating method reloadTableViewWhenNewEvent
+
+- (void) reloadTableViewWhenNewEvent {
+
+    // It's nesessary to implement of removal all objects at array before would creat it again
+    
+    [self.arrayEvents removeAllObjects];
+    //  self.arrayEvents = [[NSMutableArray alloc] initWithObjects:@"AAAA ", @"BBBB ", @"CCCC", nil];
     
     // Study how has created some events which became be notifications at table view some Iphone
     
@@ -45,6 +55,7 @@
     
     [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
 
+  
 }
 
 - (void)didReceiveMemoryWarning {
