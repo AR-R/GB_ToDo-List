@@ -40,6 +40,14 @@
 
 }
 
+// To avoid of extensions and bugs because of wrong actions
+
+- (void) dealloc {
+
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+
+}
+
 // Such method has appeared when some windows must only reveal on the screen of the device
 
 
