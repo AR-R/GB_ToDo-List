@@ -18,7 +18,7 @@
 
 /* Begin PBXFileReference section */
 		2C30E9C41C67693B0073A471 /* ToDo List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ToDo List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C30E9C81C67693B0073A471 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "ToDo List/main.m"; sourceTree = "<group>"; };
+		2C30E9C81C67693B0073A471 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2C30E9CA1C67693B0073A471 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2C30E9CB1C67693B0073A471 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2C30E9D11C67693B0073A471 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -45,7 +45,6 @@
 		2C30E9BB1C67693B0073A471 = {
 			isa = PBXGroup;
 			children = (
-				2C30E9C81C67693B0073A471 /* main.m */,
 				2C30E9C61C67693B0073A471 /* ToDo List */,
 				2C30E9C51C67693B0073A471 /* Products */,
 			);
@@ -80,6 +79,7 @@
 		2C30E9C71C67693B0073A471 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2C30E9C81C67693B0073A471 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -219,7 +219,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -256,7 +256,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
